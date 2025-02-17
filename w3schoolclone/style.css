@@ -72,7 +72,6 @@ nav ul li svg {
   font-size: 70px;
 }
 
-
 .learnToCode2 {
   font-size: 20px;
   color: wheat;
@@ -295,7 +294,7 @@ nav ul li svg {
 /* Container for the iframe */
 .iframe-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -478,8 +477,8 @@ nav ul li svg {
 }
 /* Footer Styles */
 #footer {
-  background-color: #333;
-  color: #fff;
+  background-color: white ;
+  color:black;
   padding: 20px 0;
   font-size: 14px;
   text-align: center;
@@ -521,7 +520,7 @@ nav ul li svg {
 }
 
 .footer-center ul li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s ease;
@@ -561,5 +560,106 @@ nav ul li svg {
 
   .footer-center ul {
     justify-content: center;
+  }
+}
+
+
+.example-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.testimonial-card img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.faq {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+.faq h1{
+  text-align: center;
+  padding: 20px
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%; 
+  margin: auto;
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #282a35;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us button {
+  padding: 20px;
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .testimonials .testimonial-cards {
+    flex-direction: column;
+  }
+  .faq-item h2 {
+    font-size: 18px;
+  }
+
+  .contact-us form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    width: 100%;
   }
 }
